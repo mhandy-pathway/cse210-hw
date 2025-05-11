@@ -1,22 +1,17 @@
 using System.Text.Json;
+// W02 Project - Matt Handy
+// How I showed CREATIVITY and EXCEEDED REQUIREMENTS in this assignment:
+// * I allow the user to type in NEW to get another random prompt.
+// * I allow the user to type in CUSTOM to write their own custom prompt.
+// * I allow the user to type in CANCEL to cancel the journal entry.
+// * I use System.Text.JSON to serialize and deserialize the journal entries.
+// * I confirm with the user the deletion of current entries before loading from a file.
+// * I confirm with the user the deletion of a JSON file that exists before writing to a file.
 class Program
 {
     static Journal _journal = new Journal();
     static void Main(string[] args)
     {
-        Console.WriteLine("---------------------------");
-        Console.WriteLine("|       W02 PROJECT       |");
-        Console.WriteLine("|       Matt  Handy       |");
-        Console.WriteLine("---------------------------");
-        Console.WriteLine("How I showed creativity and exceeded requirements in this assignment:");
-        Console.WriteLine("* I allow the user to type in NEW to get another random prompt.");
-        Console.WriteLine("* I allow the user to type in CUSTOM to write their own custom prompt.");
-        Console.WriteLine("* I allow the user to type in CANCEL to cancel the journal entry.");
-        Console.WriteLine("* I use System.Text.JSON to serialize and deserialize the journal entries.");
-        Console.WriteLine("* I confirm with the user the deletion of current entries before loading from a file.");
-        Console.WriteLine("* I confirm with the user the deletion of a JSON file that exists before writing to a file.");
-        Console.WriteLine();
-
         string command;
         do
         {
