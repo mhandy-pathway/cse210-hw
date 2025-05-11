@@ -20,7 +20,7 @@ public class Journal
     public void PromptForEntry()
     {
         string answer = "";
-        int prompt_index;
+        int promptIndex;
         Random random = new Random();
         string prompt;
         do
@@ -36,8 +36,8 @@ public class Journal
             else
             {
                 // Get Random Prompt
-                prompt_index = random.Next(_prompts.Count);
-                prompt = _prompts[prompt_index];
+                promptIndex = random.Next(_prompts.Count);
+                prompt = _prompts[promptIndex];
                 Console.WriteLine($"JOURNAL PROMPT: {prompt}");
             }
             Console.WriteLine();
